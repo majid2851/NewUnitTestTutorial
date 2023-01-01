@@ -1,0 +1,35 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://jitpack.io' }
+    }
+}
+//buildscript {
+//    repositories {
+//        gradlePluginPortal()
+//        google()
+//        mavenCentral()
+//        maven { url 'https://maven.google.com' }
+//        maven { url 'https://jitpack.io' }
+//    }
+//    dependencies {
+//        classpath "de.mannodermaus.gradle.plugins:android-junit5:1.8.2.1"
+//
+//    }
+//}
+
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "My Application"
+include ':app'
